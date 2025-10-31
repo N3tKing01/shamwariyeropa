@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BLEADER-MD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Add this after the body tag -->
+<button class="mobile-menu-toggle" id="mobileMenuToggle">
+  <i class="fas fa-bars"></i>
+</button>
+  <!-- Binary Code Background -->
+  <div class="binary-background"></div>
+  
+  <!-- Particle background -->
+  <div class="particles" id="particles"></div>
+
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="logo">B</div>
+          <div>
+            <div style="font-weight:800">BLEADER-MD</div>
+            <div style="font-size:0.78rem;color:var(--muted)">WhatsApp Bot</div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-nav">
+        <a href="#dashboard" class="active"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="#features"><i class="fas fa-star"></i> Features</a>
+        <a href="#connect"><i class="fas fa-link"></i> Connect</a>
+        <a href="#links"><i class="fas fa-external-link-alt"></i> Links</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-menu">
+          <span>Welcome to BLEADER-MD</span>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="dashboard" class="content-section hero-section">
+        <h1>✨ BLEADER-MD</h1>
+        <p>A modern WhatsApp bot with powerful features, Made by <strong>Mr Emerald</strong>.</p>
+
+        <!-- Stats Container -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value" id="activeSockets">0</div>
+            <div class="stat-label">Active Sockets</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="totalUsers">0</div>
+            <div class="stat-label">Total Users</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="content-section">
+        <div class="card">
+          <h2><i class="fas fa-star"></i> Features</h2>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-reply"></i>
+              </div>
+              <h3>Auto Replies</h3>
+              <p>Smart automated responses to messages based on customizable triggers.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-image"></i>
+              </div>
+              <h3>Media Tools</h3>
+              <p>Download, convert, and manage media files with ease.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <h3>Commands System</h3>
+              <p>Extend functionality with custom Commands and scripts.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Security</h3>
+              <p>Built-in security features to protect your privacy and data.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connect Section -->
+      <section id="connect" class="content-section">
+        <div class="card">
+          <h2><i class="fas fa-link"></i> Connect to WhatsApp</h2>
+          
+          <div class="instructions">
+            <h3>How to connect:</h3>
+            <ol>
+              <li>Enter your WhatsApp number with country code (no "+", no brackets, no spaces)</li>
+              <li>Click "Request Pairing Code"</li>
+              <li>Copy the 8-digit code</li>
+              <li>Open WhatsApp → Settings → Linked Devices → Link a Device</li>
+              <li>Paste the code when prompted</li>
+            </ol>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" class="form-control" placeholder="e.g. 263738365135 (with country code)" />
+          </div>
+          
+          <button class="btn btn-primary" id="requestPairing">
+            <i class="fas fa-key"></i> Request Pairing Code
+          </button>
+          
+          <div id="status" class="status-message"></div>
+        </div>
+      </section>
+
+      <!-- Links Section -->
+      <section id="links" class="content-section">
+        <div class="card">
+          <h2><i class="fas fa-external-link-alt"></i> Links</h2>
+          <div class="link-grid">
+            <a class="btn btn-primary" href="https://github.com/JoshKingofc/BOYXA-XD" target="_blank">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+            <a class="btn btn-secondary" href="https://whatsapp.com/channel/0029VaraMtfFcowAKRdDdp1T" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp Channel
+            </a>
+            <a class="btn btn-secondary" href="https://www.tiktok.com/@Joshuamambo2" target="_blank">
+              <i class="fab fa-tiktok"></i> Tiktok
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>BLEADER-MD</h3>
+            <p>A powerful WhatsApp bot with advanced features and security.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#dashboard">Dashboard</a><br>
+            <a href="#features">Features</a><br>
+            <a href="#connect">Connect</a>
+          </div>
+          <div class="footer-section">
+            <h3>Developer</h3>
+            <p>Made with ❤️ by ‎🅼🄸🅳🄺🅸🄽🅶 🅃🅴🄲🅷</p>
+          </div>
+        </div>
+        <div class="copyright">
+          © <span id="year"></span> ‎🅼🄸🅳🄺🅸🄽🅶 🅃🅴🄲🅷 · BLEADER-MD 
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- socket.io client -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- frontend logic -->
+  <script src="scripts.js"></script>
+</body>
+</html>
