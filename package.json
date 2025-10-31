@@ -15,7 +15,7 @@
     "@hapi/boom": "^10.0.1",
     "@iamtraction/google-translate": "^2.0.1",
     "@vitalets/google-translate-api": "^9.2.1",
-    "@whiskeysockets/baileys": "^7.0.0-rc.2",
+    "@whiskeysockets/baileys": "^6.7.18",
     "axios": "^1.12.2",
     "colors": "^1.4.0",
     "dotenv": "^17.2.2",
